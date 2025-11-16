@@ -8,12 +8,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">S</span>
+                <span className="text-xl font-bold text-primary-foreground">H</span>
               </div>
-              <span className="text-xl font-bold gradient-text">SolanaICO</span>
+              <span className="text-xl font-bold gradient-text">HydraICO</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Building the future of decentralized finance on Solana blockchain.
+              Building the future of decentralized finance with Hydra blockchain technology.
             </p>
           </div>
           
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-          <p>© 2024 SolanaICO. All rights reserved. Built on Solana blockchain.</p>
+          <p>© 2024 HydraICO. All rights reserved. Built on Solana blockchain.</p>
         </div>
       </div>
     </footer>
