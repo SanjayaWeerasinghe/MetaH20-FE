@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Wallet } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,10 +21,12 @@ const Navbar = () => {
             <a href="#roadmap" className="text-foreground/80 hover:text-primary transition-colors">Roadmap</a>
           </div>
           
-          <Button className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect">
-            <Wallet className="mr-2 h-4 w-4" />
-            Connect Wallet
-          </Button>
+          <Link to="/buy">
+            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect">
+              <Wallet className="mr-2 h-4 w-4" />
+              Buy Tokens
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
