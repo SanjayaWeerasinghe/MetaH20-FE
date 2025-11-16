@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Wallet, TrendingUp, Clock, ArrowDownRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const MyInvestments = () => {
   // Mock data - will be replaced with actual wallet data
@@ -33,17 +31,24 @@ const MyInvestments = () => {
   ];
 
   return (
-    <>
-      <Navbar />
-      <div className="min-h-screen bg-background relative overflow-hidden pt-20">
-        {/* Background Effects */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        
-        <div className="container mx-auto px-4 py-8 relative z-10">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      
+      <div className="container mx-auto px-4 py-8 relative z-10">
+        {/* Header */}
+        <div className="mb-8">
+          <Link to="/">
+            <Button variant="ghost" className="mb-4">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">My Investments</h1>
-          <p className="text-muted-foreground mb-8">Track your HydraICO token holdings and transaction history</p>
+          <p className="text-muted-foreground">Track your HydraICO token holdings and transaction history</p>
+        </div>
 
         {/* Stats Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -164,8 +169,7 @@ const MyInvestments = () => {
           </Link>
         </div>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 
