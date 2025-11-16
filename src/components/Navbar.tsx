@@ -19,6 +19,8 @@ const Navbar = () => {
             <a href="#tokenomics" className="text-foreground/80 hover:text-primary transition-colors">Tokenomics</a>
             <a href="#investors" className="text-foreground/80 hover:text-primary transition-colors">Investors</a>
             <a href="#roadmap" className="text-foreground/80 hover:text-primary transition-colors">Roadmap</a>
+            <Link to="/my-investments" className="text-foreground/80 hover:text-primary transition-colors">My Investment</Link>
+            <Link to="/buy" className="text-foreground/80 hover:text-primary transition-colors">Buy Tokens</Link>
           </div>
           
           <Button className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect">
