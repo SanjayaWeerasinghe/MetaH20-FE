@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,10 +25,12 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect text-lg px-8">
-              Buy Tokens Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/buy">
+              <Button size="lg" className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect text-lg px-8">
+                Buy Tokens Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10 text-lg px-8">
               Read Whitepaper
             </Button>
