@@ -47,7 +47,7 @@ const BuyTokens = () => {
             </Button>
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">Buy Tokens</h1>
-          <p className="text-muted-foreground">Participate in the SolanaICO token sale</p>
+          <p className="text-muted-foreground">Participate in the HydraICO token sale</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
