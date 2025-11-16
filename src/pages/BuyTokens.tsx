@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { ArrowLeft, Wallet, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const BuyTokens = () => {
   const [solAmount, setSolAmount] = useState("");
@@ -31,24 +33,17 @@ const BuyTokens = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5" />
-      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
-      
-      <div className="container mx-auto px-4 py-8 relative z-10">
-        {/* Header */}
-        <div className="mb-8">
-          <Link to="/">
-            <Button variant="ghost" className="mb-4">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
+    <>
+      <Navbar />
+      <div className="min-h-screen bg-background relative overflow-hidden pt-20">
+        {/* Background Effects */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        
+        <div className="container mx-auto px-4 py-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">Buy Tokens</h1>
-          <p className="text-muted-foreground">Participate in the HydraICO token sale</p>
-        </div>
+          <p className="text-muted-foreground mb-8">Participate in the HydraICO token sale</p>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Purchase Form */}
@@ -166,7 +161,8 @@ const BuyTokens = () => {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
