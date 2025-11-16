@@ -21,12 +21,10 @@ const Navbar = () => {
             <a href="#roadmap" className="text-foreground/80 hover:text-primary transition-colors">Roadmap</a>
           </div>
           
-          <Link to="/buy">
-            <Button className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect">
-              <Wallet className="mr-2 h-4 w-4" />
-              Buy Tokens
-            </Button>
-          </Link>
+          <Button className="bg-gradient-primary hover:opacity-90 transition-opacity glow-effect">
+            <Wallet className="mr-2 h-4 w-4" />
+            Connect Wallet
+          </Button>
         </div>
       </div>
     </nav>
