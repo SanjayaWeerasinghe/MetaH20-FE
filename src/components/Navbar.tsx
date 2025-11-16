@@ -9,9 +9,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">S</span>
+              <span className="text-xl font-bold text-primary-foreground">H</span>
             </div>
-            <span className="text-xl font-bold gradient-text">SolanaICO</span>
+            <span className="text-xl font-bold gradient-text">HydraICO</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
