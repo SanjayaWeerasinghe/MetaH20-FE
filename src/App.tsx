@@ -19,8 +19,8 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  // Configure the Solana network (mainnet for production)
-  const network = WalletAdapterNetwork.Mainnet;
+  // Configure the Solana network (devnet for testing)
+  const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   // Add Phantom and Solflare wallet adapters

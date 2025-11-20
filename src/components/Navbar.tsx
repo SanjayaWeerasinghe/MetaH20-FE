@@ -11,12 +11,13 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">H</span>
-            </div>
-            <span className="text-xl font-bold gradient-text">H2OICO</span>
-          </div>
+          <Link to="/" className="flex items-center gap-2">
+            <img
+              src="/H2O-removebg-preview.png"
+              alt="MH2O Logo"
+              className="w-20 h-15 object-contain"
+            />
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">About</a>

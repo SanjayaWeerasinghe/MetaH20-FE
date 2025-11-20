@@ -17,11 +17,11 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Next Generation
-            <span className="gradient-text block">H2O Token ICO</span>
+            <span className="gradient-text block">Meta H2O Token ICO</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the future of decentralized finance. Secure your position in the revolutionary H2O blockchain ecosystem powered by Solana&apos;s lightning-fast network.
+            Join the future of decentralized finance. Secure your position in the revolutionary Meta H2O blockchain ecosystem powered by Solana&apos;s lightning-fast network.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -31,9 +31,11 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10 text-lg px-8">
-              Read Whitepaper
-            </Button>
+            <a href="/Meta H2O Coin (MH2O) - 11182025.pdf" download>
+              <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10 text-lg px-8">
+                Read Whitepaper
+              </Button>
+            </a>
           </div>
         </div>
       </div>

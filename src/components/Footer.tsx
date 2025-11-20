@@ -1,4 +1,5 @@
 import { Twitter, Github, MessageCircle, Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,13 +8,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">H</span>
-              </div>
-            <span className="text-xl font-bold gradient-text">H2OICO</span>
+              
+                <Link to="/" className="flex items-center gap-2">
+                            <img
+                              src="/H2O-removebg-preview.png"
+                              alt="MH2O Logo"
+                              className="w-40 h-20 object-contain"
+                            />
+                </Link>
+              
+            
           </div>
           <p className="text-muted-foreground text-sm">
-            Building the future of decentralized finance with H2O blockchain technology.
+            Building the future of decentralized finance with MH2O blockchain technology.
             </p>
           </div>
           
@@ -57,7 +64,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-          <p>© 2024 H2OICO. All rights reserved. Built on Solana blockchain.</p>
+          <p>© 2025 Meta H20. All rights reserved.</p>
         </div>
       </div>
     </footer>

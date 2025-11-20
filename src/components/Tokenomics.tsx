@@ -2,12 +2,7 @@ import { Card } from "@/components/ui/card";
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts";
 
 const data = [
-  { name: "Public Sale", value: 40, color: "hsl(var(--chart-1))" },
-  { name: "Team & Advisors", value: 20, color: "hsl(var(--chart-2))" },
-  { name: "Development", value: 15, color: "hsl(var(--chart-3))" },
-  { name: "Marketing", value: 10, color: "hsl(var(--chart-4))" },
-  { name: "Liquidity", value: 10, color: "hsl(var(--chart-5))" },
-  { name: "Reserve", value: 5, color: "hsl(195 100% 40%)" },
+  { name: "Investors", value: 100, color: "hsl(var(--chart-1))" },
 ];
 
 const Tokenomics = () => {
@@ -68,11 +63,11 @@ const Tokenomics = () => {
               <div className="pt-6 border-t border-border space-y-4">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Token Symbol</span>
-                  <span className="font-bold">SICO</span>
+                  <span className="font-bold">MH2O</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Total Supply</span>
-                  <span className="font-bold">100,000,000</span>
+                  <span className="font-bold">1,000,000,000</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Blockchain</span>
