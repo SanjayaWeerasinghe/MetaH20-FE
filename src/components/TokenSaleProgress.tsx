@@ -5,7 +5,7 @@ import { api, type ICOStatistics } from "@/services/api";
 
 const TokenSaleProgress = () => {
   const [stats, setStats] = useState<ICOStatistics | null>(null);
-  const totalSupply = Number(import.meta.env.VITE_TOTAL_SUPPLY) || 1000000000;
+  const totalSupply = Number(import.meta.env.VITE_TOTAL_SUPPLY);
 
   useEffect(() => {
     fetchStatistics();
@@ -27,8 +27,8 @@ const TokenSaleProgress = () => {
   const progressPercentage = (tokensSold / totalSupply) * 100;
   const tokensRemaining = totalSupply - tokensSold;
   const totalRaised = (stats?.total_usdt_raised || 0) + ((stats?.total_sol_raised || 0) * 100);
-  const tokenPrice = 1 / (Number(import.meta.env.VITE_TOKEN_RATE) || 100);
-  const hardCap = Number(import.meta.env.VITE_HARD_CAP) || 10000000;
+  const tokenPrice = 1 / (Number(import.meta.env.VITE_TOKEN_RATE));
+  const hardCap = Number(import.meta.env.VITE_HARD_CAP) ;
 
   return (
     <section className="py-20 relative">
