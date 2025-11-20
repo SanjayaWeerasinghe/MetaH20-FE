@@ -17,11 +17,11 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Next Generation
-            <span className="gradient-text block">Hydra Token ICO</span>
+            <span className="gradient-text block">H2O Token ICO</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the future of decentralized finance. Secure your position in the revolutionary Hydra blockchain ecosystem powered by Solana&apos;s lightning-fast network.
+            Join the future of decentralized finance. Secure your position in the revolutionary H2O blockchain ecosystem powered by Solana&apos;s lightning-fast network.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

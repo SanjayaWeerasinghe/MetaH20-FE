@@ -47,7 +47,7 @@ const MyInvestments = () => {
             </Button>
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-2">My Investments</h1>
-          <p className="text-muted-foreground">Track your HydraICO token holdings and transaction history</p>
+          <p className="text-muted-foreground">Track your H2OICO token holdings and transaction history</p>
         </div>
 
         {/* Stats Cards */}
@@ -61,7 +61,7 @@ const MyInvestments = () => {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold gradient-text">{totalTokens.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground mt-1">HYDRA Tokens</p>
+              <p className="text-xs text-muted-foreground mt-1">H2O Tokens</p>
             </CardContent>
           </Card>
 
@@ -122,7 +122,7 @@ const MyInvestments = () => {
                       </div>
                       <div>
                         <div className="font-semibold text-lg mb-1">
-                          +{tx.tokensReceived.toLocaleString()} HYDRA
+                          +{tx.tokensReceived.toLocaleString()} H2O
                         </div>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Clock className="h-3 w-3" />
