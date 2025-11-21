@@ -89,7 +89,7 @@ const TokenSaleProgress = () => {
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Hard Cap</p>
-                    <p className="text-xl font-bold">${(hardCap / 1000000).toFixed(0)}M</p>
+                    <p className="text-xl font-bold">${(hardCap / 1000).toFixed(0)}K</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Min Purchase</p>
