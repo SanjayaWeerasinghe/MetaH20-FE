@@ -44,7 +44,7 @@ const TokenSaleProgress = () => {
               <div>
                 <div className="flex justify-between text-sm mb-2">
                   <span className="text-muted-foreground">Progress</span>
-                  <span className="font-semibold text-primary">{progressPercentage.toFixed(2)}%</span>
+                  <span className="font-semibold text-primary">{progressPercentage.toFixed(4)}%</span>
                 </div>
                 <Progress value={progressPercentage} className="h-3 glow-effect" />
               </div>
@@ -79,7 +79,7 @@ const TokenSaleProgress = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div>
                     <p className="text-muted-foreground text-sm">Token Price</p>
-                    <p className="text-xl font-bold">${tokenPrice.toFixed(2)}</p>
+                    <p className="text-xl font-bold">${tokenPrice.toFixed(4)}</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Total Raised</p>
