@@ -308,7 +308,7 @@ const BuyTokens = () => {
               <CardContent className="space-y-4">
                 <div className="flex justify-between items-center pb-3 border-b border-border/50">
                   <span className="text-muted-foreground">Token Price</span>
-                  <span className="font-semibold">$0.01</span>
+                  <span className="font-semibold">$0.0005</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-border/50">
                   <span className="text-muted-foreground">Exchange Rate</span>
